@@ -5,6 +5,21 @@ Nayla Camelia Indraswari | A | 2409116009
 # Sistem Manajemen Aktivitas Harian (Activity Log)
 ## Deskripsi Tema
 Program ini merupakan sistem pencatat aktivitas harian sederhana yang dirancang untuk membantu pengguna dalam menyusun dan memantau tugas atau kegiatannya sehari-hari. Melalui program ini, setiap kegiatan penting dapat dicatat dengan detail, diberi tenggat waktu, diperbarui statusnya, hingga dihapus jika sudah tidak diperlukan. Dengan begitu, pengguna dapat lebih mudah mengelola aktivitas dan memastikan setiap tugas terselesaikan tepat waktu.
+## Penjelasan Struktur Packages
+
+<img width="441" height="166" alt="image" src="https://github.com/user-attachments/assets/e683759a-c559-436c-93f9-c002ee260751" />
+
+1. Package Model
+
+package ini berisi class Aktivitas yang merepresentasikan objek  program sehingga pengguna dapat menyimpan data kegiatan, seperti nama, tenggat, dan status. Package ini hanya fokus pada pendefinisian data.
+
+2. Package Service
+
+Package ini berisi class Manajemen yang berperan sebagai controller yang mengelola objek. Class ini mengatur semua logika pengelolaan kegiatan, seperti tambah, tampilkan, hapus, update, tandai selesai, dan cari kegiatan.
+
+3. Package Main
+
+Package ini berisi class Main yang menjadi kode utama program. class ini menyediakan menu, menerima input dari pengguna, dan memanggil method di Manajemen untuk menjalankan perintah.
 ## Penjelasan Alur Program
 ### Menu Utama
 
@@ -54,17 +69,38 @@ Ketika pengguna memilih menu dengan memasukkan angka "4", mereka akan masuk ke f
 <img width="417" height="298" alt="image" src="https://github.com/user-attachments/assets/e4d7c036-62cd-4c03-b37f-ee7f0f47a491" />
 
 - Ketika pengguna melakukan input selain angka, maka akan muncul output berupa informasi "input harus berupa angka" dan program kembali ke menu utama.
+  
 <img width="369" height="299" alt="image" src="https://github.com/user-attachments/assets/c3706f29-4df7-4d90-9e71-94358d85b1d3" />
 
 
 
 ### 5. Fitur Hapus Kegiatan
-<img width="471" height="220" alt="image" src="https://github.com/user-attachments/assets/447f12b0-9b80-4fa2-9ecc-ad0a20d10eae" />
 
-Ketika pengguna menginputkan angka "5", mereka akan masuk ke fitur Hapus Kegiatan. Di fitur ini, pengguna diminta memasukkan nomor kegiatan yang ingin dihapus, lalu kegiatan yang dipilih beserta seluruh detailnya informasinya akan dihapus dari daftar.
+<img width="460" height="359" alt="image" src="https://github.com/user-attachments/assets/3b9cf350-149d-4b2a-a7f1-f5472d6faea7" />
 
-### 6. Keluar dari Program
-<img width="471" height="148" alt="image" src="https://github.com/user-attachments/assets/6a228983-80a2-45c2-ba80-b6a3f686c653" />
+Ketika pengguna menginputkan angka "5", ia akan masuk ke fitur Hapus Kegiatan. Di fitur ini, pengguna diminta memasukkan nomor kegiatan yang ingin dihapus. Kemudian kegiatan yang dipilih beserta seluruh detailnya informasinya akan dihapus dari daftar kegiatan.
+
+- Ketika pengguna menginput nomor kegiatan yang tidak tersedia, akan muncul output berupa "input tidak valid" dan program akan kembali ke menu utama.
+
+<img width="335" height="199" alt="image" src="https://github.com/user-attachments/assets/16486367-7a87-4dee-9d7c-c8d86abb43c6" />
+
+- ketika pengguna menginput selain angka, maka akan muncul output berupa "input harus angka" dan program akan kembali ke menu utama.
+
+<img width="373" height="207" alt="image" src="https://github.com/user-attachments/assets/d717b166-faee-4a9e-9dc5-ba47036cdb0b" />
+
+
+### 6. Fitur Search Kegiatan
+<img width="606" height="321" alt="image" src="https://github.com/user-attachments/assets/fc08a8c7-6571-4b3e-bec9-21a0af5e7838" />
+
+Saat pengguna menginputkan angka "6" pada menu, ia akan beralih menuju fitur search program ini. Fitur ini merupakan fitur pencarian kegiatan berdasarkan input yang diberikan pengguna. Jika kata kunci yang dimasukkan oleh pengguna terdapat dalam daftar kegiatan, maka output akan memunculkan nama kegiatan beserta detail informasinya.
+
+- ketika kata kunci yang diinput pengguna tidak terdapat dalam daftar kegiatan, maka akan muncul output berupa informasi bahwa kegiatan tersebut tidak ada.
+
+<img width="446" height="241" alt="image" src="https://github.com/user-attachments/assets/6336e987-48b6-41ad-9a63-66c82945532e" />
+
+
+### 7. Keluar dari Program
+<img width="561" height="259" alt="image" src="https://github.com/user-attachments/assets/b8217008-e9aa-4c2f-8d26-8f14f6f0b241" />
 
 Pengguna dapat keluar dari program dengan memasukkan angka "6" pada pilihan menu, sehingga program akan berhenti berjalan dan sesi penggunaan berakhir.
 
