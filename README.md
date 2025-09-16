@@ -9,6 +9,7 @@ Program ini merupakan sistem pencatat aktivitas harian sederhana yang dirancang 
 
 <img width="441" height="166" alt="image" src="https://github.com/user-attachments/assets/e683759a-c559-436c-93f9-c002ee260751" />
 
+
 1. Package Model
 
 package ini berisi class Aktivitas yang merepresentasikan objek  program sehingga pengguna dapat menyimpan data kegiatan, seperti nama, tenggat, dan status. Package ini hanya fokus pada pendefinisian data.
